@@ -13,12 +13,15 @@ if (localStorage.getItem('product')) {
 saveButton.addEventListener('click', function (){
     if (!(title.value || description.value || price.value)) return;
     let newProduct = {
+        id: productsList.length + 1,
         title: title.value,
         description: description.value,
         price: price.value,
-        image: image.value || 'no-image.jpg'
+        image: image.value || 'no-image.jpg',
+        inCart: 0
     };
 
+    console.log(newProduct.id);
     productsList.push(newProduct);
     localStorage.setItem('product', JSON.stringify(productsList));
     title.value = '';

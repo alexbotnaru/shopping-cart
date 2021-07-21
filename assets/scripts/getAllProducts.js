@@ -24,7 +24,7 @@ function displayProducts() {
                 <div class="card-body">
                     <h5 class="card-title">${item.title}</h5>
                     <p class="card-text">${item.description}<br> ${item.price}$</p>
-                    <a href="#" class="btn btn-primary">More details</a> <span> <a href="#" class="btn btn-danger btn-sm">Add to cart</a></span>
+                    <a href="#" class="btn btn-primary">More details</a> <span> <a href="#" class="btn btn-danger btn-sm add-cart">Add to cart</a></span>
                 </div>
             </div>
        ` ;
