@@ -21,7 +21,6 @@ saveButton.addEventListener('click', function (){
         inCart: 0
     };
 
-    console.log(newProduct.id);
     productsList.push(newProduct);
     localStorage.setItem('product', JSON.stringify(productsList));
     title.value = '';
